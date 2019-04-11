@@ -1,4 +1,4 @@
-# Quality-Manager
+# Gilded Rose
 Clean Code BootCamp
 
 
