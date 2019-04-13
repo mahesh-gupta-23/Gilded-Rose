@@ -42,4 +42,10 @@ RSpec.describe Item do
     item.update
     expect(item.quality).to eql(48)
   end
+
+  it 'should not update if Legendary' do
+    item = Item.new(10, 50, ItemType::LEGENDARY)
+    item.update
+    expect(item.quality).to eql(50)
+  end
 end

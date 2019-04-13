@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f96d487c-ceac-4cc1-bd63-7d0bc7003aad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/spec/item_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/item_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/item.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="477">
+              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/item_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+            <state relative-caret-position="507">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -60,8 +59,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/item_type.rb" />
         <option value="$PROJECT_DIR$/src/item_quality.rb" />
-        <option value="$PROJECT_DIR$/spec/item_spec.rb" />
         <option value="$PROJECT_DIR$/src/item.rb" />
+        <option value="$PROJECT_DIR$/spec/item_spec.rb" />
       </list>
     </option>
   </component>
@@ -134,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Item: QualityManager">
+  <component name="RunManager" selected="RSpec.Item should not update if Legendary: QualityManager">
     <configuration name="Item should decrease quality by 2 when normal and sell_in date is 0: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="QualityManager" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -201,7 +200,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Item should update decrease quality by 1 when normal: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Item should not update if Legendary: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="QualityManager" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -223,7 +222,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/item_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Item should update decrease quality by 1 when normal" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Item should not update if Legendary" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -302,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Item should not update if Legendary: QualityManager" />
         <item itemvalue="RSpec.Item: QualityManager" />
         <item itemvalue="RSpec.Item should decrease quality by 2 when normal and sell_in date is 0: QualityManager" />
         <item itemvalue="RSpec.Item should not decrease quality if quality is 0: QualityManager" />
         <item itemvalue="RSpec.Run spec 'item_spec': QualityManager" />
-        <item itemvalue="RSpec.Item should update decrease quality by 1 when normal: QualityManager" />
       </list>
     </recent_temporary>
   </component>
@@ -324,23 +323,11 @@
       <workItem from="1554985285937" duration="756000" />
       <workItem from="1554986083819" duration="1334000" />
       <workItem from="1554993031523" duration="6354000" />
-      <workItem from="1555149032343" duration="5474000" />
+      <workItem from="1555149032343" duration="6689000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Item_should_update_decrease_quality_by_1_when_normal__QualityManager - 2019.04.13 at 16h 36m 34s.xml">
-      <configuration name="Item should update decrease quality by 1 when normal: QualityManager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Item__QualityManager - 2019.04.13 at 16h 36m 40s.xml">
-      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Item__QualityManager - 2019.04.13 at 16h 39m 18s.xml">
-      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Run_spec_'item_spec'__QualityManager - 2019.04.13 at 16h 39m 26s.xml">
-      <configuration name="Run spec 'item_spec': QualityManager" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_spec_'item_spec'__QualityManager - 2019.04.13 at 16h 39m 42s.xml">
       <configuration name="Run spec 'item_spec': QualityManager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -359,9 +346,21 @@
     <history-entry file="Item_should_decrease_quality_by_2_when_normal_and_sell_in_date_is_0__QualityManager - 2019.04.13 at 17h 09m 14s.xml">
       <configuration name="Item should decrease quality by 2 when normal and sell_in date is 0: QualityManager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Item__QualityManager - 2019.04.13 at 17h 15m 08s.xml">
+      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item__QualityManager - 2019.04.13 at 17h 17m 23s.xml">
+      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_if_Legendary__QualityManager - 2019.04.13 at 17h 48m 11s.xml">
+      <configuration name="Item should not update if Legendary: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_if_Legendary__QualityManager - 2019.04.13 at 17h 48m 18s.xml">
+      <configuration name="Item should not update if Legendary: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13918000" />
+    <option name="totallyTimeSpent" value="15133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-32" width="1366" height="800" extended-state="6" />
@@ -379,7 +378,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5096296" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998565" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -391,13 +390,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_update_sell_in_when_item_is_legendary__QualityManager.rcov" NAME="Item should not update sell_in when item is legendary: QualityManager Coverage Results" MODIFIED="1555150187997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
+    <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_update_if_Legendary__QualityManager.rcov" NAME="Item should not update if Legendary: QualityManager Coverage Results" MODIFIED="1555157897595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_decrease_quality_if_quality_is_0__QualityManager.rcov" NAME="Item should not decrease quality if quality is 0: QualityManager Coverage Results" MODIFIED="1555153874450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_update_sell_in_when_sell_in_is_0__QualityManager.rcov" NAME="Item should not update sell_in when sell_in is 0: QualityManager Coverage Results" MODIFIED="1555150345216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_throw_error_if_not_a_valid_item_type__QualityManager.rcov" NAME="Item should throw error if not a valid item type: QualityManager Coverage Results" MODIFIED="1555151415709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_decrease_quality_by_2_when_normal_and_sell_in_date_is_0__QualityManager.rcov" NAME="Item should decrease quality by 2 when normal and sell_in date is 0: QualityManager Coverage Results" MODIFIED="1555155554180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
-    <SUITE FILE_PATH="coverage/Gilded_Rose@Item__QualityManager.rcov" NAME="Item: QualityManager Coverage Results" MODIFIED="1555155907531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
+    <SUITE FILE_PATH="coverage/Gilded_Rose@Item__QualityManager.rcov" NAME="Item: QualityManager Coverage Results" MODIFIED="1555156043401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Run_spec__item_spec___QualityManager.rcov" NAME="Run spec 'item_spec': QualityManager Coverage Results" MODIFIED="1555153782327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_update_decrease_quality_by_1_when_normal__QualityManager.rcov" NAME="Item should update decrease quality by 1 when normal: QualityManager Coverage Results" MODIFIED="1555153593512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
   </component>
@@ -456,17 +482,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/item_spec.rb">
+    <entry file="file://$PROJECT_DIR$/src/item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="477">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/item.rb">
+    <entry file="file://$PROJECT_DIR$/spec/item_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="507">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
         </state>
       </provider>
     </entry>
