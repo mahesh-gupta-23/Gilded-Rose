@@ -20,6 +20,6 @@ class Item
   end
 
   def update_sell_in
-    @sell_in -= 1 if @sell_in > 0
+    @sell_in -= 1 if @sell_in > 0 && @type != ItemType::LEGENDARY
   end
 end
