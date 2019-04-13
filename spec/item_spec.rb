@@ -48,4 +48,16 @@ RSpec.describe Item do
     item.update
     expect(item.quality).to eql(50)
   end
+
+  it 'should increase quality if Reverse' do
+    item = Item.new(10, 20, ItemType::REVERSE)
+    item.update
+    expect(item.quality).to eql(21)
+  end
+
+  it 'should stop increasing quality if quality is 50' do
+    item = Item.new(10, 50, ItemType::REVERSE)
+    item.update
+    expect(item.quality).to eql(50)
+  end
 end

@@ -20,16 +20,28 @@ class Item
   end
 
   def update_quality
-    update_normal if @type == ItemType::NORMAL
+    case @type
+    when ItemType::NORMAL
+      update_normal_quality
+    when ItemType::REVERSE
+      update_reverse_quality
+    end
   end
 
-  def update_normal
-    decrease_quality(1) if @quality.positive? && !sell_date_passed
-    decrease_quality(2) if @quality.positive? && sell_date_passed
+  def update_normal_quality
+    sell_date_passed ? decrease_quality(2) : decrease_quality(1)
+  end
+
+  def update_reverse_quality
+    increase_quality(1)
+  end
+
+  def increase_quality(times)
+    @quality += times if @quality < 50
   end
 
   def decrease_quality(times)
-    @quality -= times
+    @quality -= times if @quality.positive?
   end
 
   def sell_date_passed
