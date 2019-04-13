@@ -14,4 +14,10 @@ RSpec.describe Item do
     item.update
     expect(item.sell_in).to eql(200)
   end
+
+  it 'should not update sell_in when sell_in is 0' do
+    item = Item.new(0, 50, ItemType::NORMAL)
+    item.update
+    expect(item.sell_in).to eql(0)
+  end
 end
