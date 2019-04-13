@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Item
   attr_reader :sell_in, :quality, :type
 
@@ -25,6 +27,10 @@ class Item
       update_normal_quality
     when ItemType::REVERSE
       update_reverse_quality
+    when ItemType::PASSES
+      update_passes_quality
+    when ItemType::CONJURED
+      update_conjured_quality
     end
   end
 
@@ -34,6 +40,22 @@ class Item
 
   def update_reverse_quality
     increase_quality(1)
+  end
+
+  def update_passes_quality
+    if @sell_in.zero?
+      @quality = 0
+    elsif @sell_in <= 5
+      increase_quality(3)
+    elsif @sell_in <= 10
+      increase_quality(2)
+    else
+      increase_quality(1)
+    end
+  end
+
+  def update_conjured_quality
+    decrease_quality(2)
   end
 
   def increase_quality(times)
@@ -47,5 +69,4 @@ class Item
   def sell_date_passed
     @sell_in.zero?
   end
-
 end

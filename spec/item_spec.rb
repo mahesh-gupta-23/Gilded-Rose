@@ -60,4 +60,46 @@ RSpec.describe Item do
     item.update
     expect(item.quality).to eql(50)
   end
+
+  it 'should decrease quality twice if type is Conjured' do
+    item = Item.new(10, 50, ItemType::CONJURED)
+    item.update
+    expect(item.quality).to eql(48)
+  end
+
+  it 'should drop quality to 0 is sell_in date is passed if Passes type' do
+    item = Item.new(0, 50, ItemType::PASSES)
+    item.update
+    expect(item.quality).to eql(0)
+  end
+
+  it 'should increase the quality by 1 if sell_in date is > 10 for Passes type' do
+    item = Item.new(12, 20, ItemType::PASSES)
+    item.update
+    expect(item.quality).to eql(21)
+  end
+
+  it 'should increase the quality by 2 if sell_in date is < 10 but > 5 for Passes type' do
+    item = Item.new(9, 20, ItemType::PASSES)
+    item.update
+    expect(item.quality).to eql(22)
+  end
+
+  it 'should increase the quality by 2 if sell_in date is = 10 for Passes type' do
+    item = Item.new(11, 20, ItemType::PASSES) # 11 as initially sell_in is decreased
+    item.update
+    expect(item.quality).to eql(22)
+  end
+
+  it 'should increase the quality by 3 if sell_in date is < 5 but > 0 for Passes type' do
+    item = Item.new(4, 20, ItemType::PASSES)
+    item.update
+    expect(item.quality).to eql(23)
+  end
+
+  it 'should increase the quality by 3 if sell_in date is = 5 for Passes type' do
+    item = Item.new(6, 20, ItemType::PASSES) # 6 as initially sell_in is decreased
+    item.update
+    expect(item.quality).to eql(23)
+  end
 end
