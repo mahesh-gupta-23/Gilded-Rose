@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96d487c-ceac-4cc1-bd63-7d0bc7003aad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/QualityManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QualityManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/item_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/item_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_type.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/item.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+            <state relative-caret-position="120">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/item_type.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -28,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/item_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -95,6 +116,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -114,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Item: QualityManager">
+  <component name="RunManager" selected="RSpec.Item should throw error if not a valid item type: QualityManager">
     <configuration name="Item should not update sell_in when item is legendary: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="QualityManager" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -181,6 +203,39 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Item should throw error if not a valid item type: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="QualityManager" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/item_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Item should throw error if not a valid item type" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Item: QualityManager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="QualityManager" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -216,6 +271,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Item should throw error if not a valid item type: QualityManager" />
         <item itemvalue="RSpec.Item: QualityManager" />
         <item itemvalue="RSpec.Item should not update sell_in when sell_in is 0: QualityManager" />
         <item itemvalue="RSpec.Item should not update sell_in when item is legendary: QualityManager" />
@@ -236,7 +292,7 @@
       <workItem from="1554985285937" duration="756000" />
       <workItem from="1554986083819" duration="1334000" />
       <workItem from="1554993031523" duration="6354000" />
-      <workItem from="1555149032343" duration="1164000" />
+      <workItem from="1555149032343" duration="2252000" />
     </task>
     <servers />
   </component>
@@ -247,9 +303,33 @@
     <history-entry file="Item__QualityManager - 2019.04.11 at 20h 06m 27s.xml">
       <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Item_should_not_update_sell_in_when_item_is_legendary__QualityManager - 2019.04.13 at 15h 39m 00s.xml">
+      <configuration name="Item should not update sell_in when item is legendary: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_sell_in_when_item_is_legendary__QualityManager - 2019.04.13 at 15h 39m 40s.xml">
+      <configuration name="Item should not update sell_in when item is legendary: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_sell_in_when_item_is_legendary__QualityManager - 2019.04.13 at 15h 39m 48s.xml">
+      <configuration name="Item should not update sell_in when item is legendary: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_sell_in_when_sell_in_is_0__QualityManager - 2019.04.13 at 15h 42m 19s.xml">
+      <configuration name="Item should not update sell_in when sell_in is 0: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_not_update_sell_in_when_sell_in_is_0__QualityManager - 2019.04.13 at 15h 42m 25s.xml">
+      <configuration name="Item should not update sell_in when sell_in is 0: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item__QualityManager - 2019.04.13 at 15h 42m 30s.xml">
+      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item__QualityManager - 2019.04.13 at 15h 45m 26s.xml">
+      <configuration name="Item: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Item_should_throw_error_if_not_a_valid_item_type__QualityManager - 2019.04.13 at 15h 56m 22s.xml">
+      <configuration name="Item should throw error if not a valid item type: QualityManager" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9608000" />
+    <option name="totallyTimeSpent" value="10696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-32" width="1366" height="800" extended-state="6" />
@@ -282,7 +362,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_update_sell_in_when_item_is_legendary__QualityManager.rcov" NAME="Item should not update sell_in when item is legendary: QualityManager Coverage Results" MODIFIED="1555150187997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
     <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_not_update_sell_in_when_sell_in_is_0__QualityManager.rcov" NAME="Item should not update sell_in when sell_in is 0: QualityManager Coverage Results" MODIFIED="1555150345216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
-    <SUITE FILE_PATH="coverage/Gilded_Rose@Item__QualityManager.rcov" NAME="Item: QualityManager Coverage Results" MODIFIED="1555150350442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
+    <SUITE FILE_PATH="coverage/Gilded_Rose@Item_should_throw_error_if_not_a_valid_item_type__QualityManager.rcov" NAME="Item should throw error if not a valid item type: QualityManager Coverage Results" MODIFIED="1555151415709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
+    <SUITE FILE_PATH="coverage/Gilded_Rose@Item__QualityManager.rcov" NAME="Item: QualityManager Coverage Results" MODIFIED="1555151400168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="QualityManager" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
@@ -317,7 +398,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="375">
-            <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -325,24 +406,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/item_type.rb">
+    <entry file="file://$PROJECT_DIR$/src/item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/item.rb">
+    <entry file="file://$PROJECT_DIR$/src/item_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/item_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="360">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>

@@ -5,8 +5,8 @@ class Item
     @sell_in = sell_in
     @quality = quality
     @type = type
+    raise('Not a valid item type') if ItemType.not_valid_item_type(type)
   end
-
 
   def update
     update_sell_in
@@ -20,6 +20,6 @@ class Item
   end
 
   def update_sell_in
-    @sell_in -= 1 if @sell_in > 0 && @type != ItemType::LEGENDARY
+    @sell_in -= 1 if @sell_in.positive? && @type != ItemType::LEGENDARY
   end
 end

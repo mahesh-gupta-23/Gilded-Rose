@@ -20,4 +20,8 @@ RSpec.describe Item do
     item.update
     expect(item.sell_in).to eql(0)
   end
+
+  it 'should throw error if not a valid item type' do
+    expect { Item.new(0, 50, 'invalid') }.to raise_error('Not a valid item type')
+  end
 end
