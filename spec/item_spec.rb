@@ -25,14 +25,14 @@ RSpec.describe Item do
     expect {Item.new(0, 50, 'invalid')}.to raise_error('Not a valid item type')
   end
 
-  it 'should not decrease quality' do
-    item = Item.new(0, 50, ItemType::NORMAL)
+  it 'should not decrease quality if quality is 0' do
+    item = Item.new(50, 0, ItemType::NORMAL)
     item.update
-    expect(item.quality).to eql(49)
+    expect(item.quality).to eql(0)
   end
 
   it 'should update decrease quality by 1 when normal' do
-    item = Item.new(0, 50, ItemType::NORMAL)
+    item = Item.new(10, 50, ItemType::NORMAL)
     item.update
     expect(item.quality).to eql(49)
   end
