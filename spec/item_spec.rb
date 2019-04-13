@@ -31,9 +31,15 @@ RSpec.describe Item do
     expect(item.quality).to eql(0)
   end
 
-  it 'should update decrease quality by 1 when normal' do
+  it 'should decrease quality by 1 when normal' do
     item = Item.new(10, 50, ItemType::NORMAL)
     item.update
     expect(item.quality).to eql(49)
+  end
+
+  it 'should decrease quality by 2 when normal and sell_in date is 0' do
+    item = Item.new(0, 50, ItemType::NORMAL)
+    item.update
+    expect(item.quality).to eql(48)
   end
 end

@@ -8,7 +8,6 @@ class Item
     raise('Not a valid item type') if ItemType.not_valid_item_type(type)
   end
 
-
   def update
     update_sell_in
     update_quality
@@ -25,7 +24,16 @@ class Item
   end
 
   def update_normal
-    @quality -= 1 if @quality.positive?
+    decrease_quality(1) if @quality.positive? && !sell_date_passed
+    decrease_quality(2) if @quality.positive? && sell_date_passed
+  end
+
+  def decrease_quality(times)
+    @quality -= times
+  end
+
+  def sell_date_passed
+    @sell_in.zero?
   end
 
 end
