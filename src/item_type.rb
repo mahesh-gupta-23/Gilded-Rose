@@ -1,11 +1,30 @@
 class ItemType
-  NORMAL = 'NORMAL'.freeze # Decrease quality by 1
-  LEGENDARY = 'LEGENDARY'.freeze # Do not decrease quality nor sell_in
-  REVERSE = 'REVERSE'.freeze # Increase quality as sell in approaches
-  PASSES = 'PASSES'.freeze # Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less
-  CONJURED = 'CONJURED'.freeze # Quality decrease by 2
+  attr_reader :sell_in, :quality
 
-  def self.not_valid_item_type(type)
-    ![NORMAL, LEGENDARY, REVERSE, PASSES, CONJURED].include? type
+  def initialize(sell_in, quality)
+    @sell_in = sell_in
+    @quality = quality
+  end
+
+  def update
+    update_sell_in
+    update_quality
+  end
+
+  def update_sell_in;end
+
+  def update_quality;end
+
+
+  def increase_quality(times)
+    @quality += times if @quality < 50
+  end
+
+  def decrease_quality(times)
+    @quality -= times if @quality.positive?
+  end
+
+  def sell_date_passed
+    @sell_in.zero?
   end
 end
